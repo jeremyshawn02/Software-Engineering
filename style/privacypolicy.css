@@ -1,0 +1,233 @@
+:root{
+    --primary-color: #093b4b; 
+    --secondary-color: #68c48c;
+    --background-color: #f8f8f8;
+    --icon-color: #0d60a5;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: "Rubik", sans-serif;
+    background-image: linear-gradient(to bottom, #fff, #05bfdb);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(181, 181, 181);
+    padding: 10px 15px 5px 15px;
+    box-sizing: border-box;
+    margin: 0px 60px 0px 60px;
+}
+
+nav img{
+    width: 75px;
+}
+
+.greetings{
+    display: flex;
+    align-items: flex-end;
+}
+
+.greetings p{
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.nav-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+
+.navigation{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ion-icon{
+    font-size: 32px;
+    color: #0d60a5;
+    --ionicon-stroke-width: 40px;
+}
+
+.nav-logo a i{
+    color: var(--icon-color);
+    font-size: 28px;
+}
+
+.nav-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+  
+.nav-logo:hover {
+    transform: translateY(-5px);
+}
+
+.nav-logo:hover .text {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.nav-logo .text {
+    opacity: 0;
+    transition: 0.3s;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.logout-button a{
+    color: black;
+    text-decoration: none;
+}
+.change-province-button {
+    position: relative;
+    display: inline-block;
+}
+
+.current-province img {
+    width: 40px;
+    padding: 10px;
+    background-color: #e8e8e8;
+    border-radius: 15px;
+}
+
+.dropdown-container {
+    position: absolute;
+    min-width: 160px;
+    right: 0;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 20px;
+    outline: 2px solid #d7d7d7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: 0.3s;
+}
+
+hr {
+    width: 100%;
+}
+
+.enrolled-province {
+    display: flex;
+    align-items: center;
+}
+
+.enrolled-province img {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.dropdown-container span {
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    color: grey;
+}
+
+.enrolled-province,
+.add-new-province,
+.dropdown-container span {
+    margin-left: 6px;
+}
+
+.dropdown-container {
+    display: none;
+}
+
+.change-province-button:hover .dropdown-container {
+    display: block;
+}
+
+.change-province-button:hover .current-province img {
+    background-color: #d0d0d0;
+    transition: 0.3s;
+}
+
+.change-province-button .current-province img {
+    transition: 0.3s;
+}
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 87.67%;
+    position: relative;
+}
+
+.container{
+    position: absolute;
+    display: flex;
+    top: 50px;
+    width: 800px;
+    height: 500px;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 15px;
+    background-color: #f5f5f5;
+}
+
+.sidebar {
+    width: 180px;
+    border-right: 1px solid rgb(185, 185, 185);
+}
+  
+.sidebar ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+  
+.sidebar li {
+    padding: 8px;
+    position: relative;
+    margin-bottom: 5px;
+    border: 1px solid transparent;
+}
+
+.sidebar li:nth-child(4) a{
+    color: #13558b;
+}
+
+.sidebar li:nth-child(4){
+    background-color: #bfe0ec;
+    border-radius: 10px;
+    border: 1px solid #1a6eb3;
+}
+  
+.sidebar li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hover-effect:hover{
+    background-color: rgb(211, 210, 210);
+    border-radius: 10px;
+    border: 1px solid rgb(136, 136, 136);
+}
+
+.content{
+    padding: 15px;
+}
+
+
+.title{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
